@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Subtitle Sync Loader",
+  "version": "1.7.1",
+  "description": "Load an .srt into page video and sync with [ and ] keys.",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Load subtitles"
+  }
+}
